@@ -1,0 +1,15 @@
+# Render Blueprint: FastAPI prediction backend (models + SHAP).
+# Render dashboard -> New -> Blueprint -> pick this repo.
+services:
+  - type: web
+    name: cardiovision-api
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn cad.api:app --app-dir src --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.13.3
+      - key: CORS_ORIGINS
+        value: "*"   # tighten to your Vercel URL once known, e.g. https://cardiovision.vercel.app

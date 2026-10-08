@@ -1,0 +1,2287 @@
+{
+  "shape": [
+    303,
+    59
+  ],
+  "missing_total": 0,
+  "duplicate_rows": 0,
+  "profile": [
+    {
+      "column": "Age",
+      "dtype": "int64",
+      "n_unique": 46,
+      "missing": 0,
+      "min": 30.0,
+      "max": 86.0,
+      "mean": 58.898
+    },
+    {
+      "column": "Weight",
+      "dtype": "int64",
+      "n_unique": 54,
+      "missing": 0,
+      "min": 48.0,
+      "max": 120.0,
+      "mean": 73.832
+    },
+    {
+      "column": "Length",
+      "dtype": "int64",
+      "n_unique": 44,
+      "missing": 0,
+      "min": 140.0,
+      "max": 188.0,
+      "mean": 164.716
+    },
+    {
+      "column": "Sex",
+      "dtype": "str",
+      "n_unique": 2,
+      "missing": 0,
+      "values": {
+        "Male": 176,
+        "Fmale": 127
+      }
+    },
+    {
+      "column": "BMI",
+      "dtype": "float64",
+      "n_unique": 263,
+      "missing": 0,
+      "min": 18.115412710007302,
+      "max": 40.90065778377467,
+      "mean": 27.248
+    },
+    {
+      "column": "DM",
+      "dtype": "int64",
+      "n_unique": 2,
+      "missing": 0,
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.297
+    },
+    {
+      "column": "HTN",
+      "dtype": "int64",
+      "n_unique": 2,
+      "missing": 0,
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.591
+    },
+    {
+      "column": "Current Smoker",
+      "dtype": "int64",
+      "n_unique": 2,
+      "missing": 0,
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.208
+    },
+    {
+      "column": "EX-Smoker",
+      "dtype": "int64",
+      "n_unique": 2,
+      "missing": 0,
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.033
+    },
+    {
+      "column": "FH",
+      "dtype": "int64",
+      "n_unique": 2,
+      "missing": 0,
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.158
+    },
+    {
+      "column": "Obesity",
+      "dtype": "str",
+      "n_unique": 2,
+      "missing": 0,
+      "values": {
+        "Y": 211,
+        "N": 92
+      }
+    },
+    {
+      "column": "CRF",
+      "dtype": "str",
+      "n_unique": 2,
+      "missing": 0,
+      "values": {
+        "N": 297,
+        "Y": 6
+      }
+    },
+    {
+      "column": "CVA",
+      "dtype": "str",
+      "n_unique": 2,
+      "missing": 0,
+      "values": {
+        "N": 298,
+        "Y": 5
+      }
+    },
+    {
+      "column": "Airway disease",
+      "dtype": "str",
+      "n_unique": 2,
+      "missing": 0,
+      "values": {
+        "N": 292,
+        "Y": 11
+      }
+    },
+    {
+      "column": "Thyroid Disease",
+      "dtype": "str",
+      "n_unique": 2,
+      "missing": 0,
+      "values": {
+        "N": 296,
+        "Y": 7
+      }
+    },
+    {
+      "column": "CHF",
+      "dtype": "str",
+      "n_unique": 2,
+      "missing": 0,
+      "values": {
+        "N": 302,
+        "Y": 1
+      }
+    },
+    {
+      "column": "DLP",
+      "dtype": "str",
+      "n_unique": 2,
+      "missing": 0,
+      "values": {
+        "N": 191,
+        "Y": 112
+      }
+    },
+    {
+      "column": "BP",
+      "dtype": "int64",
+      "n_unique": 17,
+      "missing": 0,
+      "min": 90.0,
+      "max": 190.0,
+      "mean": 129.554
+    },
+    {
+      "column": "PR",
+      "dtype": "int64",
+      "n_unique": 21,
+      "missing": 0,
+      "min": 50.0,
+      "max": 110.0,
+      "mean": 75.142
+    },
+    {
+      "column": "Edema",
+      "dtype": "int64",
+      "n_unique": 2,
+      "missing": 0,
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.04
+    },
+    {
+      "column": "Weak Peripheral Pulse",
+      "dtype": "str",
+      "n_unique": 2,
+      "missing": 0,
+      "values": {
+        "N": 298,
+        "Y": 5
+      }
+    },
+    {
+      "column": "Lung rales",
+      "dtype": "str",
+      "n_unique": 2,
+      "missing": 0,
+      "values": {
+        "N": 292,
+        "Y": 11
+      }
+    },
+    {
+      "column": "Systolic Murmur",
+      "dtype": "str",
+      "n_unique": 2,
+      "missing": 0,
+      "values": {
+        "N": 262,
+        "Y": 41
+      }
+    },
+    {
+      "column": "Diastolic Murmur",
+      "dtype": "str",
+      "n_unique": 2,
+      "missing": 0,
+      "values": {
+        "N": 294,
+        "Y": 9
+      }
+    },
+    {
+      "column": "Typical Chest Pain",
+      "dtype": "int64",
+      "n_unique": 2,
+      "missing": 0,
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.541
+    },
+    {
+      "column": "Dyspnea",
+      "dtype": "str",
+      "n_unique": 2,
+      "missing": 0,
+      "values": {
+        "N": 169,
+        "Y": 134
+      }
+    },
+    {
+      "column": "Function Class",
+      "dtype": "int64",
+      "n_unique": 4,
+      "missing": 0,
+      "min": 0.0,
+      "max": 3.0,
+      "mean": 0.663
+    },
+    {
+      "column": "Atypical",
+      "dtype": "str",
+      "n_unique": 2,
+      "missing": 0,
+      "values": {
+        "N": 210,
+        "Y": 93
+      }
+    },
+    {
+      "column": "Nonanginal",
+      "dtype": "str",
+      "n_unique": 2,
+      "missing": 0,
+      "values": {
+        "N": 287,
+        "Y": 16
+      }
+    },
+    {
+      "column": "Exertional CP",
+      "dtype": "str",
+      "n_unique": 1,
+      "missing": 0,
+      "values": {
+        "N": 303
+      }
+    },
+    {
+      "column": "LowTH Ang",
+      "dtype": "str",
+      "n_unique": 2,
+      "missing": 0,
+      "values": {
+        "N": 301,
+        "Y": 2
+      }
+    },
+    {
+      "column": "Q Wave",
+      "dtype": "int64",
+      "n_unique": 2,
+      "missing": 0,
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.053
+    },
+    {
+      "column": "St Elevation",
+      "dtype": "int64",
+      "n_unique": 2,
+      "missing": 0,
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.046
+    },
+    {
+      "column": "St Depression",
+      "dtype": "int64",
+      "n_unique": 2,
+      "missing": 0,
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.234
+    },
+    {
+      "column": "Tinversion",
+      "dtype": "int64",
+      "n_unique": 2,
+      "missing": 0,
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.297
+    },
+    {
+      "column": "LVH",
+      "dtype": "str",
+      "n_unique": 2,
+      "missing": 0,
+      "values": {
+        "N": 283,
+        "Y": 20
+      }
+    },
+    {
+      "column": "Poor R Progression",
+      "dtype": "str",
+      "n_unique": 2,
+      "missing": 0,
+      "values": {
+        "N": 294,
+        "Y": 9
+      }
+    },
+    {
+      "column": "BBB",
+      "dtype": "str",
+      "n_unique": 3,
+      "missing": 0,
+      "values": {
+        "N": 282,
+        "LBBB": 13,
+        "RBBB": 8
+      }
+    },
+    {
+      "column": "FBS",
+      "dtype": "int64",
+      "n_unique": 113,
+      "missing": 0,
+      "min": 62.0,
+      "max": 400.0,
+      "mean": 119.185
+    },
+    {
+      "column": "CR",
+      "dtype": "float64",
+      "n_unique": 18,
+      "missing": 0,
+      "min": 0.5,
+      "max": 2.2,
+      "mean": 1.056
+    },
+    {
+      "column": "TG",
+      "dtype": "int64",
+      "n_unique": 147,
+      "missing": 0,
+      "min": 37.0,
+      "max": 1050.0,
+      "mean": 150.343
+    },
+    {
+      "column": "LDL",
+      "dtype": "int64",
+      "n_unique": 110,
+      "missing": 0,
+      "min": 18.0,
+      "max": 232.0,
+      "mean": 104.644
+    },
+    {
+      "column": "HDL",
+      "dtype": "float64",
+      "n_unique": 47,
+      "missing": 0,
+      "min": 15.9,
+      "max": 111.0,
+      "mean": 40.234
+    },
+    {
+      "column": "BUN",
+      "dtype": "int64",
+      "n_unique": 33,
+      "missing": 0,
+      "min": 6.0,
+      "max": 52.0,
+      "mean": 17.502
+    },
+    {
+      "column": "ESR",
+      "dtype": "int64",
+      "n_unique": 58,
+      "missing": 0,
+      "min": 1.0,
+      "max": 90.0,
+      "mean": 19.462
+    },
+    {
+      "column": "HB",
+      "dtype": "float64",
+      "n_unique": 66,
+      "missing": 0,
+      "min": 8.9,
+      "max": 17.6,
+      "mean": 13.153
+    },
+    {
+      "column": "K",
+      "dtype": "float64",
+      "n_unique": 27,
+      "missing": 0,
+      "min": 3.0,
+      "max": 6.6,
+      "mean": 4.231
+    },
+    {
+      "column": "Na",
+      "dtype": "int64",
+      "n_unique": 25,
+      "missing": 0,
+      "min": 128.0,
+      "max": 156.0,
+      "mean": 140.997
+    },
+    {
+      "column": "WBC",
+      "dtype": "int64",
+      "n_unique": 78,
+      "missing": 0,
+      "min": 3700.0,
+      "max": 18000.0,
+      "mean": 7562.046
+    },
+    {
+      "column": "Lymph",
+      "dtype": "int64",
+      "n_unique": 50,
+      "missing": 0,
+      "min": 7.0,
+      "max": 60.0,
+      "mean": 32.399
+    },
+    {
+      "column": "Neut",
+      "dtype": "int64",
+      "n_unique": 52,
+      "missing": 0,
+      "min": 32.0,
+      "max": 89.0,
+      "mean": 60.149
+    },
+    {
+      "column": "PLT",
+      "dtype": "int64",
+      "n_unique": 135,
+      "missing": 0,
+      "min": 25.0,
+      "max": 742.0,
+      "mean": 221.488
+    },
+    {
+      "column": "EF-TTE",
+      "dtype": "int64",
+      "n_unique": 11,
+      "missing": 0,
+      "min": 15.0,
+      "max": 60.0,
+      "mean": 47.231
+    },
+    {
+      "column": "Region RWMA",
+      "dtype": "int64",
+      "n_unique": 5,
+      "missing": 0,
+      "min": 0.0,
+      "max": 4.0,
+      "mean": 0.62
+    },
+    {
+      "column": "VHD",
+      "dtype": "str",
+      "n_unique": 4,
+      "missing": 0,
+      "values": {
+        "mild": 149,
+        "N": 116,
+        "Moderate": 27,
+        "Severe": 11
+      }
+    },
+    {
+      "column": "LAD",
+      "dtype": "str",
+      "n_unique": 2,
+      "missing": 0,
+      "values": {
+        "Stenotic": 177,
+        "Normal": 126
+      }
+    },
+    {
+      "column": "LCX",
+      "dtype": "str",
+      "n_unique": 2,
+      "missing": 0,
+      "values": {
+        "Normal": 184,
+        "Stenotic": 119
+      }
+    },
+    {
+      "column": "RCA",
+      "dtype": "str",
+      "n_unique": 2,
+      "missing": 0,
+      "values": {
+        "Normal": 189,
+        "Stenotic": 114
+      }
+    },
+    {
+      "column": "Cath",
+      "dtype": "str",
+      "n_unique": 2,
+      "missing": 0,
+      "values": {
+        "CAD": 216,
+        "Normal": 87
+      }
+    }
+  ],
+  "consistency": {
+    "bmi_recompute_max_abs_diff": 0.0,
+    "bmi_mismatch_gt_1": 0,
+    "obesity_vs_bmi_gt25_disagree": 1,
+    "current_and_ex_smoker": 0,
+    "chest_pain_types_gt1": 0,
+    "chest_pain_types_none": 30,
+    "lymph_plus_neut_gt100": 0
+  },
+  "outliers": {
+    "Age": {
+      "implausible": 0,
+      "iqr3_outliers": 0,
+      "min": 30.0,
+      "max": 86.0
+    },
+    "Weight": {
+      "implausible": 0,
+      "iqr3_outliers": 0,
+      "min": 48.0,
+      "max": 120.0
+    },
+    "Length": {
+      "implausible": 0,
+      "iqr3_outliers": 0,
+      "min": 140.0,
+      "max": 188.0
+    },
+    "BMI": {
+      "implausible": 0,
+      "iqr3_outliers": 0,
+      "min": 18.115412710007302,
+      "max": 40.90065778377467
+    },
+    "BP": {
+      "implausible": 0,
+      "iqr3_outliers": 0,
+      "min": 90.0,
+      "max": 190.0
+    },
+    "PR": {
+      "implausible": 0,
+      "iqr3_outliers": 0,
+      "min": 50.0,
+      "max": 110.0
+    },
+    "FBS": {
+      "implausible": 0,
+      "iqr3_outliers": 9,
+      "min": 62.0,
+      "max": 400.0
+    },
+    "CR": {
+      "implausible": 0,
+      "iqr3_outliers": 1,
+      "min": 0.5,
+      "max": 2.2
+    },
+    "TG": {
+      "implausible": 0,
+      "iqr3_outliers": 5,
+      "min": 37.0,
+      "max": 1050.0
+    },
+    "LDL": {
+      "implausible": 1,
+      "iqr3_outliers": 0,
+      "min": 18.0,
+      "max": 232.0
+    },
+    "HDL": {
+      "implausible": 0,
+      "iqr3_outliers": 3,
+      "min": 15.9,
+      "max": 111.0
+    },
+    "BUN": {
+      "implausible": 0,
+      "iqr3_outliers": 3,
+      "min": 6.0,
+      "max": 52.0
+    },
+    "ESR": {
+      "implausible": 0,
+      "iqr3_outliers": 3,
+      "min": 1.0,
+      "max": 90.0
+    },
+    "HB": {
+      "implausible": 0,
+      "iqr3_outliers": 0,
+      "min": 8.9,
+      "max": 17.6
+    },
+    "K": {
+      "implausible": 0,
+      "iqr3_outliers": 1,
+      "min": 3.0,
+      "max": 6.6
+    },
+    "Na": {
+      "implausible": 0,
+      "iqr3_outliers": 2,
+      "min": 128.0,
+      "max": 156.0
+    },
+    "WBC": {
+      "implausible": 0,
+      "iqr3_outliers": 1,
+      "min": 3700.0,
+      "max": 18000.0
+    },
+    "Lymph": {
+      "implausible": 0,
+      "iqr3_outliers": 0,
+      "min": 7.0,
+      "max": 60.0
+    },
+    "Neut": {
+      "implausible": 0,
+      "iqr3_outliers": 0,
+      "min": 32.0,
+      "max": 89.0
+    },
+    "PLT": {
+      "implausible": 0,
+      "iqr3_outliers": 1,
+      "min": 25.0,
+      "max": 742.0
+    },
+    "EF-TTE": {
+      "implausible": 0,
+      "iqr3_outliers": 0,
+      "min": 15.0,
+      "max": 60.0
+    }
+  },
+  "labels": {
+    "cath_vs_any_vessel": {
+      "Cath=0,any=0": 86,
+      "Cath=0,any=1": 1,
+      "Cath=1,any=0": 0,
+      "Cath=1,any=1": 216
+    },
+    "inconsistent_rows": [
+      93
+    ],
+    "vessel_patterns_LAD_LCX_RCA": {
+      "000": 86,
+      "111": 63,
+      "100": 57,
+      "110": 33,
+      "101": 24,
+      "001": 17,
+      "010": 13,
+      "011": 10
+    },
+    "n_diseased_vessels": {
+      "0": 86,
+      "1": 87,
+      "2": 67,
+      "3": 63
+    },
+    "target_correlation": {
+      "Cath": {
+        "Cath": 1.0,
+        "LAD": 0.737,
+        "LCX": 0.51,
+        "RCA": 0.493
+      },
+      "LAD": {
+        "Cath": 0.737,
+        "LAD": 1.0,
+        "LCX": 0.363,
+        "RCA": 0.282
+      },
+      "LCX": {
+        "Cath": 0.51,
+        "LAD": 0.363,
+        "LCX": 1.0,
+        "RCA": 0.394
+      },
+      "RCA": {
+        "Cath": 0.493,
+        "LAD": 0.282,
+        "LCX": 0.394,
+        "RCA": 1.0
+      }
+    },
+    "prevalence": {
+      "Cath": 0.713,
+      "LAD": 0.584,
+      "LCX": 0.393,
+      "RCA": 0.376
+    }
+  },
+  "near_constant": {
+    "CRF": {
+      "0": 297,
+      "1": 6
+    },
+    "CVA": {
+      "0": 298,
+      "1": 5
+    },
+    "Thyroid Disease": {
+      "0": 296,
+      "1": 7
+    },
+    "CHF": {
+      "0": 302,
+      "1": 1
+    },
+    "Weak Peripheral Pulse": {
+      "0": 298,
+      "1": 5
+    },
+    "Diastolic Murmur": {
+      "0": 294,
+      "1": 9
+    },
+    "Exertional CP": {
+      "0": 303
+    },
+    "LowTH Ang": {
+      "0": 301,
+      "1": 2
+    },
+    "Poor R Progression": {
+      "0": 294,
+      "1": 9
+    }
+  },
+  "associations": [
+    {
+      "feature": "Age",
+      "target": "Cath",
+      "test": "mannwhitney",
+      "p": 1.053991625392095e-09,
+      "effect": 0.724
+    },
+    {
+      "feature": "Age",
+      "target": "LAD",
+      "test": "mannwhitney",
+      "p": 1.4490918345575541e-07,
+      "effect": 0.677
+    },
+    {
+      "feature": "Age",
+      "target": "LCX",
+      "test": "mannwhitney",
+      "p": 1.040318519325601e-07,
+      "effect": 0.681
+    },
+    {
+      "feature": "Age",
+      "target": "RCA",
+      "test": "mannwhitney",
+      "p": 8.340431726762403e-05,
+      "effect": 0.635
+    },
+    {
+      "feature": "Weight",
+      "target": "Cath",
+      "test": "mannwhitney",
+      "p": 0.2136701815410187,
+      "effect": 0.454
+    },
+    {
+      "feature": "Weight",
+      "target": "LAD",
+      "test": "mannwhitney",
+      "p": 0.1416619116687945,
+      "effect": 0.45
+    },
+    {
+      "feature": "Weight",
+      "target": "LCX",
+      "test": "mannwhitney",
+      "p": 0.6898850207346546,
+      "effect": 0.486
+    },
+    {
+      "feature": "Weight",
+      "target": "RCA",
+      "test": "mannwhitney",
+      "p": 0.573620024390739,
+      "effect": 0.519
+    },
+    {
+      "feature": "Length",
+      "target": "Cath",
+      "test": "mannwhitney",
+      "p": 0.9427527795343724,
+      "effect": 0.503
+    },
+    {
+      "feature": "Length",
+      "target": "LAD",
+      "test": "mannwhitney",
+      "p": 0.681692542620153,
+      "effect": 0.514
+    },
+    {
+      "feature": "Length",
+      "target": "LCX",
+      "test": "mannwhitney",
+      "p": 0.14552845184692775,
+      "effect": 0.549
+    },
+    {
+      "feature": "Length",
+      "target": "RCA",
+      "test": "mannwhitney",
+      "p": 0.07716488599779676,
+      "effect": 0.561
+    },
+    {
+      "feature": "Sex",
+      "target": "Cath",
+      "test": "chi2",
+      "p": 0.2991274803299408,
+      "effect": 0.06
+    },
+    {
+      "feature": "Sex",
+      "target": "LAD",
+      "test": "chi2",
+      "p": 0.1141229175556189,
+      "effect": 0.091
+    },
+    {
+      "feature": "Sex",
+      "target": "LCX",
+      "test": "chi2",
+      "p": 0.07858468917640292,
+      "effect": 0.101
+    },
+    {
+      "feature": "Sex",
+      "target": "RCA",
+      "test": "chi2",
+      "p": 0.04653345784212949,
+      "effect": 0.114
+    },
+    {
+      "feature": "BMI",
+      "target": "Cath",
+      "test": "mannwhitney",
+      "p": 0.25372211714021153,
+      "effect": 0.458
+    },
+    {
+      "feature": "BMI",
+      "target": "LAD",
+      "test": "mannwhitney",
+      "p": 0.07715337355877326,
+      "effect": 0.44
+    },
+    {
+      "feature": "BMI",
+      "target": "LCX",
+      "test": "mannwhitney",
+      "p": 0.23182860792648008,
+      "effect": 0.459
+    },
+    {
+      "feature": "BMI",
+      "target": "RCA",
+      "test": "mannwhitney",
+      "p": 0.5582725836283948,
+      "effect": 0.48
+    },
+    {
+      "feature": "DM",
+      "target": "Cath",
+      "test": "chi2",
+      "p": 2.0151216696088066e-05,
+      "effect": 0.245
+    },
+    {
+      "feature": "DM",
+      "target": "LAD",
+      "test": "chi2",
+      "p": 0.04320531746160774,
+      "effect": 0.116
+    },
+    {
+      "feature": "DM",
+      "target": "LCX",
+      "test": "chi2",
+      "p": 0.00895218295673416,
+      "effect": 0.15
+    },
+    {
+      "feature": "DM",
+      "target": "RCA",
+      "test": "chi2",
+      "p": 4.704316890575094e-06,
+      "effect": 0.263
+    },
+    {
+      "feature": "HTN",
+      "target": "Cath",
+      "test": "chi2",
+      "p": 1.0613994174234381e-06,
+      "effect": 0.28
+    },
+    {
+      "feature": "HTN",
+      "target": "LAD",
+      "test": "chi2",
+      "p": 0.002165820861384489,
+      "effect": 0.176
+    },
+    {
+      "feature": "HTN",
+      "target": "LCX",
+      "test": "chi2",
+      "p": 0.003514729760138351,
+      "effect": 0.168
+    },
+    {
+      "feature": "HTN",
+      "target": "RCA",
+      "test": "chi2",
+      "p": 0.014332351831827265,
+      "effect": 0.141
+    },
+    {
+      "feature": "Current Smoker",
+      "target": "Cath",
+      "test": "chi2",
+      "p": 0.2614282408056519,
+      "effect": 0.065
+    },
+    {
+      "feature": "Current Smoker",
+      "target": "LAD",
+      "test": "chi2",
+      "p": 0.17721821766820128,
+      "effect": 0.078
+    },
+    {
+      "feature": "Current Smoker",
+      "target": "LCX",
+      "test": "chi2",
+      "p": 0.4241168333985106,
+      "effect": 0.046
+    },
+    {
+      "feature": "Current Smoker",
+      "target": "RCA",
+      "test": "chi2",
+      "p": 0.599498583746745,
+      "effect": 0.03
+    },
+    {
+      "feature": "EX-Smoker",
+      "target": "Cath",
+      "test": "chi2",
+      "p": 0.7918503571878034,
+      "effect": 0.015
+    },
+    {
+      "feature": "EX-Smoker",
+      "target": "LAD",
+      "test": "chi2",
+      "p": 0.27922551223896835,
+      "effect": 0.062
+    },
+    {
+      "feature": "EX-Smoker",
+      "target": "LCX",
+      "test": "chi2",
+      "p": 0.0902594829514455,
+      "effect": 0.097
+    },
+    {
+      "feature": "EX-Smoker",
+      "target": "RCA",
+      "test": "chi2",
+      "p": 0.6243848244715364,
+      "effect": 0.028
+    },
+    {
+      "feature": "FH",
+      "target": "Cath",
+      "test": "chi2",
+      "p": 0.6556712220589083,
+      "effect": 0.026
+    },
+    {
+      "feature": "FH",
+      "target": "LAD",
+      "test": "chi2",
+      "p": 0.8831545743187007,
+      "effect": 0.008
+    },
+    {
+      "feature": "FH",
+      "target": "LCX",
+      "test": "chi2",
+      "p": 1.0,
+      "effect": 0.0
+    },
+    {
+      "feature": "FH",
+      "target": "RCA",
+      "test": "chi2",
+      "p": 0.886214090921381,
+      "effect": 0.008
+    },
+    {
+      "feature": "Obesity",
+      "target": "Cath",
+      "test": "chi2",
+      "p": 0.8003392662047962,
+      "effect": 0.015
+    },
+    {
+      "feature": "Obesity",
+      "target": "LAD",
+      "test": "chi2",
+      "p": 0.34086312433840144,
+      "effect": 0.055
+    },
+    {
+      "feature": "Obesity",
+      "target": "LCX",
+      "test": "chi2",
+      "p": 0.5446508888476441,
+      "effect": 0.035
+    },
+    {
+      "feature": "Obesity",
+      "target": "RCA",
+      "test": "chi2",
+      "p": 1.0,
+      "effect": 0.0
+    },
+    {
+      "feature": "CRF",
+      "target": "Cath",
+      "test": "chi2",
+      "p": 0.2650767356538259,
+      "effect": 0.064
+    },
+    {
+      "feature": "CRF",
+      "target": "LAD",
+      "test": "chi2",
+      "p": 0.40512825669607877,
+      "effect": 0.048
+    },
+    {
+      "feature": "CRF",
+      "target": "LCX",
+      "test": "chi2",
+      "p": 0.334254332005277,
+      "effect": 0.055
+    },
+    {
+      "feature": "CRF",
+      "target": "RCA",
+      "test": "chi2",
+      "p": 1.0,
+      "effect": 0.0
+    },
+    {
+      "feature": "CVA",
+      "target": "Cath",
+      "test": "chi2",
+      "p": 1.0,
+      "effect": 0.0
+    },
+    {
+      "feature": "CVA",
+      "target": "LAD",
+      "test": "chi2",
+      "p": 0.7002336523586483,
+      "effect": 0.022
+    },
+    {
+      "feature": "CVA",
+      "target": "LCX",
+      "test": "chi2",
+      "p": 0.6685231378571488,
+      "effect": 0.025
+    },
+    {
+      "feature": "CVA",
+      "target": "RCA",
+      "test": "chi2",
+      "p": 0.5645939879088897,
+      "effect": 0.033
+    },
+    {
+      "feature": "Airway disease",
+      "target": "Cath",
+      "test": "chi2",
+      "p": 0.2602261868983113,
+      "effect": 0.065
+    },
+    {
+      "feature": "Airway disease",
+      "target": "LAD",
+      "test": "chi2",
+      "p": 0.9630912577716442,
+      "effect": 0.003
+    },
+    {
+      "feature": "Airway disease",
+      "target": "LCX",
+      "test": "chi2",
+      "p": 0.1703882208428463,
+      "effect": 0.079
+    },
+    {
+      "feature": "Airway disease",
+      "target": "RCA",
+      "test": "chi2",
+      "p": 0.8187751010345445,
+      "effect": 0.013
+    },
+    {
+      "feature": "Thyroid Disease",
+      "target": "Cath",
+      "test": "chi2",
+      "p": 0.6786883219536877,
+      "effect": 0.024
+    },
+    {
+      "feature": "Thyroid Disease",
+      "target": "LAD",
+      "test": "chi2",
+      "p": 0.2175887421823725,
+      "effect": 0.071
+    },
+    {
+      "feature": "Thyroid Disease",
+      "target": "LCX",
+      "test": "chi2",
+      "p": 0.32799516175045684,
+      "effect": 0.056
+    },
+    {
+      "feature": "Thyroid Disease",
+      "target": "RCA",
+      "test": "chi2",
+      "p": 0.9159702658271069,
+      "effect": 0.006
+    },
+    {
+      "feature": "CHF",
+      "target": "Cath",
+      "test": "chi2",
+      "p": 1.0,
+      "effect": 0.0
+    },
+    {
+      "feature": "CHF",
+      "target": "LAD",
+      "test": "chi2",
+      "p": 1.0,
+      "effect": 0.0
+    },
+    {
+      "feature": "CHF",
+      "target": "LCX",
+      "test": "chi2",
+      "p": 1.0,
+      "effect": 0.0
+    },
+    {
+      "feature": "CHF",
+      "target": "RCA",
+      "test": "chi2",
+      "p": 0.7980301035180987,
+      "effect": 0.015
+    },
+    {
+      "feature": "DLP",
+      "target": "Cath",
+      "test": "chi2",
+      "p": 0.9284012543545925,
+      "effect": 0.005
+    },
+    {
+      "feature": "DLP",
+      "target": "LAD",
+      "test": "chi2",
+      "p": 0.4798870751247276,
+      "effect": 0.041
+    },
+    {
+      "feature": "DLP",
+      "target": "LCX",
+      "test": "chi2",
+      "p": 0.9055661772269878,
+      "effect": 0.007
+    },
+    {
+      "feature": "DLP",
+      "target": "RCA",
+      "test": "chi2",
+      "p": 0.5618300122252127,
+      "effect": 0.033
+    },
+    {
+      "feature": "BP",
+      "target": "Cath",
+      "test": "mannwhitney",
+      "p": 8.398979761967459e-06,
+      "effect": 0.661
+    },
+    {
+      "feature": "BP",
+      "target": "LAD",
+      "test": "mannwhitney",
+      "p": 0.00398139515573624,
+      "effect": 0.596
+    },
+    {
+      "feature": "BP",
+      "target": "LCX",
+      "test": "mannwhitney",
+      "p": 0.0004979282353048836,
+      "effect": 0.617
+    },
+    {
+      "feature": "BP",
+      "target": "RCA",
+      "test": "mannwhitney",
+      "p": 0.06930743612375567,
+      "effect": 0.561
+    },
+    {
+      "feature": "PR",
+      "target": "Cath",
+      "test": "mannwhitney",
+      "p": 0.0032483650950267152,
+      "effect": 0.602
+    },
+    {
+      "feature": "PR",
+      "target": "LAD",
+      "test": "mannwhitney",
+      "p": 0.0020930302960111237,
+      "effect": 0.598
+    },
+    {
+      "feature": "PR",
+      "target": "LCX",
+      "test": "mannwhitney",
+      "p": 0.5007397211326716,
+      "effect": 0.522
+    },
+    {
+      "feature": "PR",
+      "target": "RCA",
+      "test": "mannwhitney",
+      "p": 0.31269381006956565,
+      "effect": 0.533
+    },
+    {
+      "feature": "Edema",
+      "target": "Cath",
+      "test": "chi2",
+      "p": 0.5381363640924626,
+      "effect": 0.035
+    },
+    {
+      "feature": "Edema",
+      "target": "LAD",
+      "test": "chi2",
+      "p": 0.13668891092401547,
+      "effect": 0.085
+    },
+    {
+      "feature": "Edema",
+      "target": "LCX",
+      "test": "chi2",
+      "p": 0.634945526134624,
+      "effect": 0.027
+    },
+    {
+      "feature": "Edema",
+      "target": "RCA",
+      "test": "chi2",
+      "p": 1.0,
+      "effect": 0.0
+    },
+    {
+      "feature": "Weak Peripheral Pulse",
+      "target": "Cath",
+      "test": "chi2",
+      "p": 0.3510272762085389,
+      "effect": 0.054
+    },
+    {
+      "feature": "Weak Peripheral Pulse",
+      "target": "LAD",
+      "test": "chi2",
+      "p": 1.0,
+      "effect": 0.0
+    },
+    {
+      "feature": "Weak Peripheral Pulse",
+      "target": "LCX",
+      "test": "chi2",
+      "p": 1.0,
+      "effect": 0.0
+    },
+    {
+      "feature": "Weak Peripheral Pulse",
+      "target": "RCA",
+      "test": "chi2",
+      "p": 0.5645939879088897,
+      "effect": 0.033
+    },
+    {
+      "feature": "Lung rales",
+      "target": "Cath",
+      "test": "chi2",
+      "p": 0.6548881235150674,
+      "effect": 0.026
+    },
+    {
+      "feature": "Lung rales",
+      "target": "LAD",
+      "test": "chi2",
+      "p": 0.1961465860608352,
+      "effect": 0.074
+    },
+    {
+      "feature": "Lung rales",
+      "target": "LCX",
+      "test": "chi2",
+      "p": 0.9099337134530574,
+      "effect": 0.006
+    },
+    {
+      "feature": "Lung rales",
+      "target": "RCA",
+      "test": "chi2",
+      "p": 1.0,
+      "effect": 0.0
+    },
+    {
+      "feature": "Systolic Murmur",
+      "target": "Cath",
+      "test": "chi2",
+      "p": 1.0,
+      "effect": 0.0
+    },
+    {
+      "feature": "Systolic Murmur",
+      "target": "LAD",
+      "test": "chi2",
+      "p": 0.8514648786211102,
+      "effect": 0.011
+    },
+    {
+      "feature": "Systolic Murmur",
+      "target": "LCX",
+      "test": "chi2",
+      "p": 0.3708146173037,
+      "effect": 0.051
+    },
+    {
+      "feature": "Systolic Murmur",
+      "target": "RCA",
+      "test": "chi2",
+      "p": 0.7482533795941725,
+      "effect": 0.018
+    },
+    {
+      "feature": "Diastolic Murmur",
+      "target": "Cath",
+      "test": "chi2",
+      "p": 0.029186841075014923,
+      "effect": 0.125
+    },
+    {
+      "feature": "Diastolic Murmur",
+      "target": "LAD",
+      "test": "chi2",
+      "p": 0.05832870041552258,
+      "effect": 0.109
+    },
+    {
+      "feature": "Diastolic Murmur",
+      "target": "LCX",
+      "test": "chi2",
+      "p": 0.47341240711780874,
+      "effect": 0.041
+    },
+    {
+      "feature": "Diastolic Murmur",
+      "target": "RCA",
+      "test": "chi2",
+      "p": 0.187662263110812,
+      "effect": 0.076
+    },
+    {
+      "feature": "Typical Chest Pain",
+      "target": "Cath",
+      "test": "chi2",
+      "p": 1.1208757414611353e-20,
+      "effect": 0.536
+    },
+    {
+      "feature": "Typical Chest Pain",
+      "target": "LAD",
+      "test": "chi2",
+      "p": 3.2074982360922084e-15,
+      "effect": 0.453
+    },
+    {
+      "feature": "Typical Chest Pain",
+      "target": "LCX",
+      "test": "chi2",
+      "p": 6.39048957696283e-07,
+      "effect": 0.286
+    },
+    {
+      "feature": "Typical Chest Pain",
+      "target": "RCA",
+      "test": "chi2",
+      "p": 7.444240041983212e-07,
+      "effect": 0.284
+    },
+    {
+      "feature": "Dyspnea",
+      "target": "Cath",
+      "test": "chi2",
+      "p": 0.04019906733759862,
+      "effect": 0.118
+    },
+    {
+      "feature": "Dyspnea",
+      "target": "LAD",
+      "test": "chi2",
+      "p": 0.17514279894421428,
+      "effect": 0.078
+    },
+    {
+      "feature": "Dyspnea",
+      "target": "LCX",
+      "test": "chi2",
+      "p": 0.45889599985773566,
+      "effect": 0.043
+    },
+    {
+      "feature": "Dyspnea",
+      "target": "RCA",
+      "test": "chi2",
+      "p": 0.09867429093181745,
+      "effect": 0.095
+    },
+    {
+      "feature": "Function Class",
+      "target": "Cath",
+      "test": "mannwhitney",
+      "p": 0.10556619571436801,
+      "effect": 0.548
+    },
+    {
+      "feature": "Function Class",
+      "target": "LAD",
+      "test": "mannwhitney",
+      "p": 0.08904261601279082,
+      "effect": 0.546
+    },
+    {
+      "feature": "Function Class",
+      "target": "LCX",
+      "test": "mannwhitney",
+      "p": 0.13816184524040392,
+      "effect": 0.541
+    },
+    {
+      "feature": "Function Class",
+      "target": "RCA",
+      "test": "mannwhitney",
+      "p": 0.04191547382700258,
+      "effect": 0.556
+    },
+    {
+      "feature": "Atypical",
+      "target": "Cath",
+      "test": "chi2",
+      "p": 1.2274095302389614e-12,
+      "effect": 0.408
+    },
+    {
+      "feature": "Atypical",
+      "target": "LAD",
+      "test": "chi2",
+      "p": 1.7279740885902826e-09,
+      "effect": 0.346
+    },
+    {
+      "feature": "Atypical",
+      "target": "LCX",
+      "test": "chi2",
+      "p": 0.004925040228729242,
+      "effect": 0.162
+    },
+    {
+      "feature": "Atypical",
+      "target": "RCA",
+      "test": "chi2",
+      "p": 6.812071961388453e-05,
+      "effect": 0.229
+    },
+    {
+      "feature": "Nonanginal",
+      "target": "Cath",
+      "test": "chi2",
+      "p": 7.162622500519449e-06,
+      "effect": 0.258
+    },
+    {
+      "feature": "Nonanginal",
+      "target": "LAD",
+      "test": "chi2",
+      "p": 0.0003592987938570711,
+      "effect": 0.205
+    },
+    {
+      "feature": "Nonanginal",
+      "target": "LCX",
+      "test": "chi2",
+      "p": 0.14311843676497124,
+      "effect": 0.084
+    },
+    {
+      "feature": "Nonanginal",
+      "target": "RCA",
+      "test": "chi2",
+      "p": 0.016547098151983197,
+      "effect": 0.138
+    },
+    {
+      "feature": "LowTH Ang",
+      "target": "Cath",
+      "test": "chi2",
+      "p": 0.907300247152006,
+      "effect": 0.007
+    },
+    {
+      "feature": "LowTH Ang",
+      "target": "LAD",
+      "test": "chi2",
+      "p": 0.6330500705737192,
+      "effect": 0.027
+    },
+    {
+      "feature": "LowTH Ang",
+      "target": "LCX",
+      "test": "chi2",
+      "p": 1.0,
+      "effect": 0.0
+    },
+    {
+      "feature": "LowTH Ang",
+      "target": "RCA",
+      "test": "chi2",
+      "p": 0.7115732182963421,
+      "effect": 0.021
+    },
+    {
+      "feature": "Q Wave",
+      "target": "Cath",
+      "test": "chi2",
+      "p": 0.02009839902944511,
+      "effect": 0.134
+    },
+    {
+      "feature": "Q Wave",
+      "target": "LAD",
+      "test": "chi2",
+      "p": 0.007233390673693197,
+      "effect": 0.154
+    },
+    {
+      "feature": "Q Wave",
+      "target": "LCX",
+      "test": "chi2",
+      "p": 0.5223684946530442,
+      "effect": 0.037
+    },
+    {
+      "feature": "Q Wave",
+      "target": "RCA",
+      "test": "chi2",
+      "p": 0.06498362608497771,
+      "effect": 0.106
+    },
+    {
+      "feature": "St Elevation",
+      "target": "Cath",
+      "test": "chi2",
+      "p": 0.03325139239822218,
+      "effect": 0.122
+    },
+    {
+      "feature": "St Elevation",
+      "target": "LAD",
+      "test": "chi2",
+      "p": 0.0031281590616597426,
+      "effect": 0.17
+    },
+    {
+      "feature": "St Elevation",
+      "target": "LCX",
+      "test": "chi2",
+      "p": 0.9992622045259323,
+      "effect": 0.0
+    },
+    {
+      "feature": "St Elevation",
+      "target": "RCA",
+      "test": "chi2",
+      "p": 0.48622164043066995,
+      "effect": 0.04
+    },
+    {
+      "feature": "St Depression",
+      "target": "Cath",
+      "test": "chi2",
+      "p": 0.018073179685046792,
+      "effect": 0.136
+    },
+    {
+      "feature": "St Depression",
+      "target": "LAD",
+      "test": "chi2",
+      "p": 0.01301192134429388,
+      "effect": 0.143
+    },
+    {
+      "feature": "St Depression",
+      "target": "LCX",
+      "test": "chi2",
+      "p": 0.6536761244925267,
+      "effect": 0.026
+    },
+    {
+      "feature": "St Depression",
+      "target": "RCA",
+      "test": "chi2",
+      "p": 0.6168372697565556,
+      "effect": 0.029
+    },
+    {
+      "feature": "Tinversion",
+      "target": "Cath",
+      "test": "chi2",
+      "p": 6.738843479506193e-05,
+      "effect": 0.229
+    },
+    {
+      "feature": "Tinversion",
+      "target": "LAD",
+      "test": "chi2",
+      "p": 0.0003820014094811213,
+      "effect": 0.204
+    },
+    {
+      "feature": "Tinversion",
+      "target": "LCX",
+      "test": "chi2",
+      "p": 0.28495500822904074,
+      "effect": 0.061
+    },
+    {
+      "feature": "Tinversion",
+      "target": "RCA",
+      "test": "chi2",
+      "p": 0.34502132175618194,
+      "effect": 0.054
+    },
+    {
+      "feature": "LVH",
+      "target": "Cath",
+      "test": "chi2",
+      "p": 0.5251252423159039,
+      "effect": 0.037
+    },
+    {
+      "feature": "LVH",
+      "target": "LAD",
+      "test": "chi2",
+      "p": 1.0,
+      "effect": 0.0
+    },
+    {
+      "feature": "LVH",
+      "target": "LCX",
+      "test": "chi2",
+      "p": 1.0,
+      "effect": 0.0
+    },
+    {
+      "feature": "LVH",
+      "target": "RCA",
+      "test": "chi2",
+      "p": 0.9905676267117676,
+      "effect": 0.001
+    },
+    {
+      "feature": "Poor R Progression",
+      "target": "Cath",
+      "test": "chi2",
+      "p": 0.11902430717636353,
+      "effect": 0.09
+    },
+    {
+      "feature": "Poor R Progression",
+      "target": "LAD",
+      "test": "chi2",
+      "p": 0.12362671870543175,
+      "effect": 0.088
+    },
+    {
+      "feature": "Poor R Progression",
+      "target": "LCX",
+      "test": "chi2",
+      "p": 0.5035507448946582,
+      "effect": 0.038
+    },
+    {
+      "feature": "Poor R Progression",
+      "target": "RCA",
+      "test": "chi2",
+      "p": 0.004057457850855725,
+      "effect": 0.165
+    },
+    {
+      "feature": "FBS",
+      "target": "Cath",
+      "test": "mannwhitney",
+      "p": 3.780629076887882e-05,
+      "effect": 0.651
+    },
+    {
+      "feature": "FBS",
+      "target": "LAD",
+      "test": "mannwhitney",
+      "p": 0.015483197035937238,
+      "effect": 0.582
+    },
+    {
+      "feature": "FBS",
+      "target": "LCX",
+      "test": "mannwhitney",
+      "p": 0.007474886004163256,
+      "effect": 0.591
+    },
+    {
+      "feature": "FBS",
+      "target": "RCA",
+      "test": "mannwhitney",
+      "p": 0.002442956099175297,
+      "effect": 0.604
+    },
+    {
+      "feature": "CR",
+      "target": "Cath",
+      "test": "mannwhitney",
+      "p": 0.32509063481985345,
+      "effect": 0.536
+    },
+    {
+      "feature": "CR",
+      "target": "LAD",
+      "test": "mannwhitney",
+      "p": 0.3921707466277141,
+      "effect": 0.529
+    },
+    {
+      "feature": "CR",
+      "target": "LCX",
+      "test": "mannwhitney",
+      "p": 0.01511231890725066,
+      "effect": 0.582
+    },
+    {
+      "feature": "CR",
+      "target": "RCA",
+      "test": "mannwhitney",
+      "p": 0.07135272167253802,
+      "effect": 0.561
+    },
+    {
+      "feature": "TG",
+      "target": "Cath",
+      "test": "mannwhitney",
+      "p": 0.0013111224147524506,
+      "effect": 0.618
+    },
+    {
+      "feature": "TG",
+      "target": "LAD",
+      "test": "mannwhitney",
+      "p": 0.043062413004390475,
+      "effect": 0.568
+    },
+    {
+      "feature": "TG",
+      "target": "LCX",
+      "test": "mannwhitney",
+      "p": 0.00886602451413206,
+      "effect": 0.589
+    },
+    {
+      "feature": "TG",
+      "target": "RCA",
+      "test": "mannwhitney",
+      "p": 0.05432005795878957,
+      "effect": 0.566
+    },
+    {
+      "feature": "LDL",
+      "target": "Cath",
+      "test": "mannwhitney",
+      "p": 0.6088245630215046,
+      "effect": 0.481
+    },
+    {
+      "feature": "LDL",
+      "target": "LAD",
+      "test": "mannwhitney",
+      "p": 0.7575222586243368,
+      "effect": 0.51
+    },
+    {
+      "feature": "LDL",
+      "target": "LCX",
+      "test": "mannwhitney",
+      "p": 0.17452285391646905,
+      "effect": 0.546
+    },
+    {
+      "feature": "LDL",
+      "target": "RCA",
+      "test": "mannwhitney",
+      "p": 0.6293322181365832,
+      "effect": 0.517
+    },
+    {
+      "feature": "HDL",
+      "target": "Cath",
+      "test": "mannwhitney",
+      "p": 0.503648949909806,
+      "effect": 0.475
+    },
+    {
+      "feature": "HDL",
+      "target": "LAD",
+      "test": "mannwhitney",
+      "p": 0.35195216053776324,
+      "effect": 0.469
+    },
+    {
+      "feature": "HDL",
+      "target": "LCX",
+      "test": "mannwhitney",
+      "p": 0.7582668951177629,
+      "effect": 0.51
+    },
+    {
+      "feature": "HDL",
+      "target": "RCA",
+      "test": "mannwhitney",
+      "p": 0.6829291211725103,
+      "effect": 0.514
+    },
+    {
+      "feature": "BUN",
+      "target": "Cath",
+      "test": "mannwhitney",
+      "p": 0.12927811653427743,
+      "effect": 0.556
+    },
+    {
+      "feature": "BUN",
+      "target": "LAD",
+      "test": "mannwhitney",
+      "p": 0.23384903776552513,
+      "effect": 0.54
+    },
+    {
+      "feature": "BUN",
+      "target": "LCX",
+      "test": "mannwhitney",
+      "p": 0.038328555083179366,
+      "effect": 0.57
+    },
+    {
+      "feature": "BUN",
+      "target": "RCA",
+      "test": "mannwhitney",
+      "p": 0.4972352795718801,
+      "effect": 0.523
+    },
+    {
+      "feature": "ESR",
+      "target": "Cath",
+      "test": "mannwhitney",
+      "p": 0.00026363573824590307,
+      "effect": 0.634
+    },
+    {
+      "feature": "ESR",
+      "target": "LAD",
+      "test": "mannwhitney",
+      "p": 0.0003131744117198049,
+      "effect": 0.621
+    },
+    {
+      "feature": "ESR",
+      "target": "LCX",
+      "test": "mannwhitney",
+      "p": 0.030907217961680757,
+      "effect": 0.573
+    },
+    {
+      "feature": "ESR",
+      "target": "RCA",
+      "test": "mannwhitney",
+      "p": 0.0008997565388390814,
+      "effect": 0.614
+    },
+    {
+      "feature": "HB",
+      "target": "Cath",
+      "test": "mannwhitney",
+      "p": 0.4231124681715752,
+      "effect": 0.471
+    },
+    {
+      "feature": "HB",
+      "target": "LAD",
+      "test": "mannwhitney",
+      "p": 0.4292173740729446,
+      "effect": 0.473
+    },
+    {
+      "feature": "HB",
+      "target": "LCX",
+      "test": "mannwhitney",
+      "p": 0.8656109844118969,
+      "effect": 0.506
+    },
+    {
+      "feature": "HB",
+      "target": "RCA",
+      "test": "mannwhitney",
+      "p": 0.8741266536534764,
+      "effect": 0.505
+    },
+    {
+      "feature": "K",
+      "target": "Cath",
+      "test": "mannwhitney",
+      "p": 0.0017358964362321919,
+      "effect": 0.615
+    },
+    {
+      "feature": "K",
+      "target": "LAD",
+      "test": "mannwhitney",
+      "p": 0.07941117168757103,
+      "effect": 0.559
+    },
+    {
+      "feature": "K",
+      "target": "LCX",
+      "test": "mannwhitney",
+      "p": 0.10305101863283941,
+      "effect": 0.555
+    },
+    {
+      "feature": "K",
+      "target": "RCA",
+      "test": "mannwhitney",
+      "p": 0.08333173248704993,
+      "effect": 0.559
+    },
+    {
+      "feature": "Na",
+      "target": "Cath",
+      "test": "mannwhitney",
+      "p": 0.09188131883262271,
+      "effect": 0.438
+    },
+    {
+      "feature": "Na",
+      "target": "LAD",
+      "test": "mannwhitney",
+      "p": 0.03100230276797723,
+      "effect": 0.428
+    },
+    {
+      "feature": "Na",
+      "target": "LCX",
+      "test": "mannwhitney",
+      "p": 0.07865144365902418,
+      "effect": 0.56
+    },
+    {
+      "feature": "Na",
+      "target": "RCA",
+      "test": "mannwhitney",
+      "p": 0.10041219501491412,
+      "effect": 0.444
+    },
+    {
+      "feature": "WBC",
+      "target": "Cath",
+      "test": "mannwhitney",
+      "p": 0.36723447804357634,
+      "effect": 0.533
+    },
+    {
+      "feature": "WBC",
+      "target": "LAD",
+      "test": "mannwhitney",
+      "p": 0.03604072524996757,
+      "effect": 0.571
+    },
+    {
+      "feature": "WBC",
+      "target": "LCX",
+      "test": "mannwhitney",
+      "p": 0.7579251144194485,
+      "effect": 0.511
+    },
+    {
+      "feature": "WBC",
+      "target": "RCA",
+      "test": "mannwhitney",
+      "p": 0.016110582331421108,
+      "effect": 0.583
+    },
+    {
+      "feature": "Lymph",
+      "target": "Cath",
+      "test": "mannwhitney",
+      "p": 0.03001850067368141,
+      "effect": 0.42
+    },
+    {
+      "feature": "Lymph",
+      "target": "LAD",
+      "test": "mannwhitney",
+      "p": 0.0012321426605400715,
+      "effect": 0.391
+    },
+    {
+      "feature": "Lymph",
+      "target": "LCX",
+      "test": "mannwhitney",
+      "p": 0.44293218114669175,
+      "effect": 0.474
+    },
+    {
+      "feature": "Lymph",
+      "target": "RCA",
+      "test": "mannwhitney",
+      "p": 0.00018012230885380498,
+      "effect": 0.372
+    },
+    {
+      "feature": "Neut",
+      "target": "Cath",
+      "test": "mannwhitney",
+      "p": 0.031161789215558844,
+      "effect": 0.579
+    },
+    {
+      "feature": "Neut",
+      "target": "LAD",
+      "test": "mannwhitney",
+      "p": 0.0012192884559436147,
+      "effect": 0.609
+    },
+    {
+      "feature": "Neut",
+      "target": "LCX",
+      "test": "mannwhitney",
+      "p": 0.23545507409646382,
+      "effect": 0.54
+    },
+    {
+      "feature": "Neut",
+      "target": "RCA",
+      "test": "mannwhitney",
+      "p": 8.064846616919094e-05,
+      "effect": 0.635
+    },
+    {
+      "feature": "PLT",
+      "target": "Cath",
+      "test": "mannwhitney",
+      "p": 0.22923068490244158,
+      "effect": 0.456
+    },
+    {
+      "feature": "PLT",
+      "target": "LAD",
+      "test": "mannwhitney",
+      "p": 0.47862840910073357,
+      "effect": 0.476
+    },
+    {
+      "feature": "PLT",
+      "target": "LCX",
+      "test": "mannwhitney",
+      "p": 0.002942679739646886,
+      "effect": 0.399
+    },
+    {
+      "feature": "PLT",
+      "target": "RCA",
+      "test": "mannwhitney",
+      "p": 0.27080245284100357,
+      "effect": 0.462
+    },
+    {
+      "feature": "EF-TTE",
+      "target": "Cath",
+      "test": "mannwhitney",
+      "p": 1.6275152664729242e-07,
+      "effect": 0.313
+    },
+    {
+      "feature": "EF-TTE",
+      "target": "LAD",
+      "test": "mannwhitney",
+      "p": 2.0039483062660521e-10,
+      "effect": 0.292
+    },
+    {
+      "feature": "EF-TTE",
+      "target": "LCX",
+      "test": "mannwhitney",
+      "p": 0.008355166387984126,
+      "effect": 0.413
+    },
+    {
+      "feature": "EF-TTE",
+      "target": "RCA",
+      "test": "mannwhitney",
+      "p": 0.0190765251118777,
+      "effect": 0.422
+    },
+    {
+      "feature": "Region RWMA",
+      "target": "Cath",
+      "test": "mannwhitney",
+      "p": 3.943072236005109e-09,
+      "effect": 0.672
+    },
+    {
+      "feature": "Region RWMA",
+      "target": "LAD",
+      "test": "mannwhitney",
+      "p": 5.941638003138837e-11,
+      "effect": 0.675
+    },
+    {
+      "feature": "Region RWMA",
+      "target": "LCX",
+      "test": "mannwhitney",
+      "p": 0.018180524345367963,
+      "effect": 0.564
+    },
+    {
+      "feature": "Region RWMA",
+      "target": "RCA",
+      "test": "mannwhitney",
+      "p": 0.18767426739755533,
+      "effect": 0.536
+    },
+    {
+      "feature": "VHD",
+      "target": "Cath",
+      "test": "mannwhitney",
+      "p": 0.3297558813113265,
+      "effect": 0.533
+    },
+    {
+      "feature": "VHD",
+      "target": "LAD",
+      "test": "mannwhitney",
+      "p": 0.09279781563430418,
+      "effect": 0.551
+    },
+    {
+      "feature": "VHD",
+      "target": "LCX",
+      "test": "mannwhitney",
+      "p": 0.7044314296513517,
+      "effect": 0.512
+    },
+    {
+      "feature": "VHD",
+      "target": "RCA",
+      "test": "mannwhitney",
+      "p": 0.215370671504315,
+      "effect": 0.539
+    }
+  ]
+}

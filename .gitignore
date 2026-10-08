@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+frontend/node_modules/
+frontend/dist/
+reports/api_log.txt
+reports/train_log.txt
+.claude/
+.env
+.env.local
+frontend/.env.local

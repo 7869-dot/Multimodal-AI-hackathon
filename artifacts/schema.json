@@ -1,0 +1,601 @@
+{
+ "version": "1.0.0",
+ "groups": {
+  "demographic": "Demographics",
+  "history": "History & risk factors",
+  "exam": "Physical exam",
+  "symptoms": "Symptoms",
+  "ecg": "ECG",
+  "lab": "Laboratory",
+  "echo": "Echocardiography"
+ },
+ "features": [
+  {
+   "label": "Age",
+   "unit": "years",
+   "kind": "number",
+   "step": 1,
+   "name": "Age",
+   "group": "demographic",
+   "min": 30.0,
+   "max": 86.0,
+   "default": 58.0
+  },
+  {
+   "label": "Weight",
+   "unit": "kg",
+   "kind": "number",
+   "step": 1,
+   "name": "Weight",
+   "group": "demographic",
+   "min": 48.0,
+   "max": 120.0,
+   "default": 74.0
+  },
+  {
+   "label": "Height",
+   "unit": "cm",
+   "kind": "number",
+   "step": 1,
+   "name": "Length",
+   "group": "demographic",
+   "min": 140.0,
+   "max": 188.0,
+   "default": 165.0
+  },
+  {
+   "label": "Sex",
+   "kind": "ordinal",
+   "options": {
+    "0": "Female",
+    "1": "Male"
+   },
+   "name": "Sex",
+   "group": "demographic",
+   "default": 1
+  },
+  {
+   "label": "BMI",
+   "unit": "kg/m²",
+   "kind": "number",
+   "step": 0.1,
+   "normal": [
+    18.5,
+    25
+   ],
+   "derived": true,
+   "name": "BMI",
+   "group": "demographic",
+   "min": 18.115412710007302,
+   "max": 40.90065778377467,
+   "default": 26.78
+  },
+  {
+   "label": "Diabetes mellitus",
+   "kind": "binary",
+   "name": "DM",
+   "group": "history",
+   "default": 0
+  },
+  {
+   "label": "Hypertension",
+   "kind": "binary",
+   "name": "HTN",
+   "group": "history",
+   "default": 1
+  },
+  {
+   "label": "Current smoker",
+   "kind": "binary",
+   "name": "Current Smoker",
+   "group": "history",
+   "default": 0
+  },
+  {
+   "label": "Ex-smoker",
+   "kind": "binary",
+   "name": "EX-Smoker",
+   "group": "history",
+   "default": 0
+  },
+  {
+   "label": "Family history of CAD",
+   "kind": "binary",
+   "name": "FH",
+   "group": "history",
+   "default": 0
+  },
+  {
+   "label": "Obesity (BMI > 25)",
+   "kind": "binary",
+   "derived": true,
+   "name": "Obesity",
+   "group": "history",
+   "default": 1
+  },
+  {
+   "label": "Chronic renal failure",
+   "kind": "binary",
+   "name": "CRF",
+   "group": "history",
+   "default": 0
+  },
+  {
+   "label": "Prior stroke (CVA)",
+   "kind": "binary",
+   "name": "CVA",
+   "group": "history",
+   "default": 0
+  },
+  {
+   "label": "Airway disease",
+   "kind": "binary",
+   "name": "Airway disease",
+   "group": "history",
+   "default": 0
+  },
+  {
+   "label": "Thyroid disease",
+   "kind": "binary",
+   "name": "Thyroid Disease",
+   "group": "history",
+   "default": 0
+  },
+  {
+   "label": "Congestive heart failure",
+   "kind": "binary",
+   "name": "CHF",
+   "group": "history",
+   "default": 0
+  },
+  {
+   "label": "Dyslipidemia",
+   "kind": "binary",
+   "name": "DLP",
+   "group": "history",
+   "default": 0
+  },
+  {
+   "label": "Systolic blood pressure",
+   "unit": "mmHg",
+   "kind": "number",
+   "step": 1,
+   "normal": [
+    90,
+    130
+   ],
+   "name": "BP",
+   "group": "exam",
+   "min": 90.0,
+   "max": 190.0,
+   "default": 130.0
+  },
+  {
+   "label": "Pulse rate",
+   "unit": "bpm",
+   "kind": "number",
+   "step": 1,
+   "normal": [
+    60,
+    100
+   ],
+   "name": "PR",
+   "group": "exam",
+   "min": 50.0,
+   "max": 110.0,
+   "default": 70.0
+  },
+  {
+   "label": "Edema",
+   "kind": "binary",
+   "name": "Edema",
+   "group": "exam",
+   "default": 0
+  },
+  {
+   "label": "Weak peripheral pulse",
+   "kind": "binary",
+   "name": "Weak Peripheral Pulse",
+   "group": "exam",
+   "default": 0
+  },
+  {
+   "label": "Lung rales",
+   "kind": "binary",
+   "name": "Lung rales",
+   "group": "exam",
+   "default": 0
+  },
+  {
+   "label": "Systolic murmur",
+   "kind": "binary",
+   "name": "Systolic Murmur",
+   "group": "exam",
+   "default": 0
+  },
+  {
+   "label": "Diastolic murmur",
+   "kind": "binary",
+   "name": "Diastolic Murmur",
+   "group": "exam",
+   "default": 0
+  },
+  {
+   "label": "Typical chest pain",
+   "kind": "binary",
+   "name": "Typical Chest Pain",
+   "group": "symptoms",
+   "default": 1
+  },
+  {
+   "label": "Dyspnea",
+   "kind": "binary",
+   "name": "Dyspnea",
+   "group": "symptoms",
+   "default": 0
+  },
+  {
+   "label": "Functional class (NYHA)",
+   "kind": "ordinal",
+   "options": {
+    "0": "0",
+    "1": "I",
+    "2": "II",
+    "3": "III",
+    "4": "IV"
+   },
+   "name": "Function Class",
+   "group": "symptoms",
+   "default": 0
+  },
+  {
+   "label": "Atypical chest pain",
+   "kind": "binary",
+   "name": "Atypical",
+   "group": "symptoms",
+   "default": 0
+  },
+  {
+   "label": "Non-anginal chest pain",
+   "kind": "binary",
+   "name": "Nonanginal",
+   "group": "symptoms",
+   "default": 0
+  },
+  {
+   "label": "Low-threshold angina",
+   "kind": "binary",
+   "name": "LowTH Ang",
+   "group": "symptoms",
+   "default": 0
+  },
+  {
+   "label": "Q wave",
+   "kind": "binary",
+   "name": "Q Wave",
+   "group": "ecg",
+   "default": 0
+  },
+  {
+   "label": "ST elevation",
+   "kind": "binary",
+   "name": "St Elevation",
+   "group": "ecg",
+   "default": 0
+  },
+  {
+   "label": "ST depression",
+   "kind": "binary",
+   "name": "St Depression",
+   "group": "ecg",
+   "default": 0
+  },
+  {
+   "label": "T-wave inversion",
+   "kind": "binary",
+   "name": "Tinversion",
+   "group": "ecg",
+   "default": 0
+  },
+  {
+   "label": "Left ventricular hypertrophy",
+   "kind": "binary",
+   "name": "LVH",
+   "group": "ecg",
+   "default": 0
+  },
+  {
+   "label": "Poor R-wave progression",
+   "kind": "binary",
+   "name": "Poor R Progression",
+   "group": "ecg",
+   "default": 0
+  },
+  {
+   "label": "Bundle branch block",
+   "kind": "category",
+   "options": {
+    "N": "None",
+    "LBBB": "Left (LBBB)",
+    "RBBB": "Right (RBBB)"
+   },
+   "name": "BBB",
+   "group": "ecg",
+   "default": "N"
+  },
+  {
+   "label": "Fasting blood sugar",
+   "unit": "mg/dL",
+   "kind": "number",
+   "step": 1,
+   "normal": [
+    70,
+    100
+   ],
+   "name": "FBS",
+   "group": "lab",
+   "min": 62.0,
+   "max": 400.0,
+   "default": 98.0
+  },
+  {
+   "label": "Creatinine",
+   "unit": "mg/dL",
+   "kind": "number",
+   "step": 0.1,
+   "normal": [
+    0.6,
+    1.3
+   ],
+   "name": "CR",
+   "group": "lab",
+   "min": 0.5,
+   "max": 2.2,
+   "default": 1.0
+  },
+  {
+   "label": "Triglycerides",
+   "unit": "mg/dL",
+   "kind": "number",
+   "step": 1,
+   "normal": [
+    0,
+    150
+   ],
+   "name": "TG",
+   "group": "lab",
+   "min": 37.0,
+   "max": 1050.0,
+   "default": 122.0
+  },
+  {
+   "label": "LDL cholesterol",
+   "unit": "mg/dL",
+   "kind": "number",
+   "step": 1,
+   "normal": [
+    0,
+    130
+   ],
+   "name": "LDL",
+   "group": "lab",
+   "min": 18.0,
+   "max": 232.0,
+   "default": 100.0
+  },
+  {
+   "label": "HDL cholesterol",
+   "unit": "mg/dL",
+   "kind": "number",
+   "step": 1,
+   "normal": [
+    40,
+    200
+   ],
+   "name": "HDL",
+   "group": "lab",
+   "min": 15.9,
+   "max": 111.0,
+   "default": 39.0
+  },
+  {
+   "label": "Blood urea nitrogen",
+   "unit": "mg/dL",
+   "kind": "number",
+   "step": 1,
+   "normal": [
+    7,
+    20
+   ],
+   "name": "BUN",
+   "group": "lab",
+   "min": 6.0,
+   "max": 52.0,
+   "default": 16.0
+  },
+  {
+   "label": "Erythrocyte sedimentation rate",
+   "unit": "mm/h",
+   "kind": "number",
+   "step": 1,
+   "normal": [
+    0,
+    20
+   ],
+   "name": "ESR",
+   "group": "lab",
+   "min": 1.0,
+   "max": 90.0,
+   "default": 15.0
+  },
+  {
+   "label": "Hemoglobin",
+   "unit": "g/dL",
+   "kind": "number",
+   "step": 0.1,
+   "normal": [
+    12,
+    17.5
+   ],
+   "name": "HB",
+   "group": "lab",
+   "min": 8.9,
+   "max": 17.6,
+   "default": 13.2
+  },
+  {
+   "label": "Potassium",
+   "unit": "mEq/L",
+   "kind": "number",
+   "step": 0.1,
+   "normal": [
+    3.5,
+    5.0
+   ],
+   "name": "K",
+   "group": "lab",
+   "min": 3.0,
+   "max": 6.6,
+   "default": 4.2
+  },
+  {
+   "label": "Sodium",
+   "unit": "mEq/L",
+   "kind": "number",
+   "step": 1,
+   "normal": [
+    135,
+    145
+   ],
+   "name": "Na",
+   "group": "lab",
+   "min": 128.0,
+   "max": 156.0,
+   "default": 141.0
+  },
+  {
+   "label": "White blood cells",
+   "unit": "cells/µL",
+   "kind": "number",
+   "step": 100,
+   "normal": [
+    4000,
+    11000
+   ],
+   "name": "WBC",
+   "group": "lab",
+   "min": 3700.0,
+   "max": 18000.0,
+   "default": 7100.0
+  },
+  {
+   "label": "Lymphocytes",
+   "unit": "%",
+   "kind": "number",
+   "step": 1,
+   "normal": [
+    20,
+    40
+   ],
+   "name": "Lymph",
+   "group": "lab",
+   "min": 7.0,
+   "max": 60.0,
+   "default": 32.0
+  },
+  {
+   "label": "Neutrophils",
+   "unit": "%",
+   "kind": "number",
+   "step": 1,
+   "normal": [
+    40,
+    70
+   ],
+   "name": "Neut",
+   "group": "lab",
+   "min": 32.0,
+   "max": 89.0,
+   "default": 60.0
+  },
+  {
+   "label": "Platelets",
+   "unit": "×10³/µL",
+   "kind": "number",
+   "step": 1,
+   "normal": [
+    150,
+    450
+   ],
+   "name": "PLT",
+   "group": "lab",
+   "min": 25.0,
+   "max": 742.0,
+   "default": 210.0
+  },
+  {
+   "label": "Ejection fraction (TTE)",
+   "unit": "%",
+   "kind": "number",
+   "step": 1,
+   "normal": [
+    50,
+    70
+   ],
+   "name": "EF-TTE",
+   "group": "echo",
+   "min": 15.0,
+   "max": 60.0,
+   "default": 50.0
+  },
+  {
+   "label": "Regional wall-motion abnormality (regions)",
+   "kind": "ordinal",
+   "options": {
+    "0": "0",
+    "1": "1",
+    "2": "2",
+    "3": "3",
+    "4": "4"
+   },
+   "name": "Region RWMA",
+   "group": "echo",
+   "default": 0
+  },
+  {
+   "label": "Valvular heart disease",
+   "kind": "ordinal",
+   "options": {
+    "0": "None",
+    "1": "Mild",
+    "2": "Moderate",
+    "3": "Severe"
+   },
+   "name": "VHD",
+   "group": "echo",
+   "default": 1
+  }
+ ],
+ "targets": {
+  "Cath": {
+   "label": "Overall CAD",
+   "description": "≥50% stenosis in at least one major coronary artery (angiography)."
+  },
+  "LAD": {
+   "label": "Left Anterior Descending",
+   "description": "Supplies the anterior wall, apex and anterior septum."
+  },
+  "LCX": {
+   "label": "Left Circumflex",
+   "description": "Supplies the lateral and posterolateral left ventricle."
+  },
+  "RCA": {
+   "label": "Right Coronary Artery",
+   "description": "Supplies the right ventricle, inferior wall and SA/AV nodes."
+  }
+ },
+ "threshold": 0.5,
+ "dropped_features": [
+  "Exertional CP"
+ ]
+}
