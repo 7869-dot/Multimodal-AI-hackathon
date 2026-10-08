@@ -30,6 +30,22 @@ cd frontend; npm install; npm run build; cd ..
 
 **Tests:** `.venv\Scripts\python -m pytest -q`. They check for target leakage, SHAP additivity, input validation and API contracts.
 
+## Deployment (Render backend + Vercel frontend)
+
+The trained models and artifacts are committed, so the backend serves predictions without retraining.
+
+1. **Backend on Render:** choose New → Blueprint and select this repo. `render.yaml` creates `cardiovision-api` with these settings:
+   - Python 3.13
+   - `pip install -r requirements.txt`
+   - `uvicorn cad.api:app --app-dir src --host 0.0.0.0 --port $PORT`
+   - health check at `/api/health`
+
+   It uses about 250 MB of RAM, so it fits the free plan. Note the service URL, e.g. `https://cardiovision-api.onrender.com`.
+2. **Frontend on Vercel:** import this repo and set **Root Directory = `frontend`** (Vite is detected automatically). Add the environment variable `VITE_API_URL=https://<your-render-service>.onrender.com`, then deploy.
+3. **Optional:** restrict CORS by setting the Render environment variable `CORS_ORIGINS=https://<your-app>.vercel.app`.
+
+Free Render services sleep after inactivity, so the first request can take about a minute while the app shows "Loading models…".
+
 ## Results (5-fold stratified CV × 10 repeats, n = 303, out-of-sample)
 
 | Target | Selected model | ROC-AUC | Accuracy | F1 | Prevalence |
