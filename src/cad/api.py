@@ -7,6 +7,8 @@ from __future__ import annotations
 
 import json
 import os
+import threading
+from contextlib import asynccontextmanager
 from functools import lru_cache
 from pathlib import Path
 
@@ -20,7 +22,10 @@ from pydantic import BaseModel, Field
 from . import __version__
 from .data import TARGETS, load_dataset
 from .features_meta import META
-from .model import MODEL_FEATURES, Explainer
+# NOTE: `.model` pulls in shap/xgboost/sklearn, which are slow to import on constrained
+# hosts (e.g. Render free tier). uvicorn must finish importing this module before it
+# binds the port, so importing those eagerly here can blow past the platform's port-scan
+# timeout. Deferred into Registry.__init__ instead, which only runs on the first request.
 
 ROOT = Path(__file__).resolve().parents[2]
 MODELS_DIR = ROOT / "models"
@@ -40,6 +45,9 @@ class Registry:
     (plus its TARGET_META entry for labels)."""
 
     def __init__(self) -> None:
+        from .model import MODEL_FEATURES, Explainer  # see note at top of file
+
+        self.MODEL_FEATURES = MODEL_FEATURES
         background = load_dataset()
         self.schema = _read("schema.json")
         self.defaults = {f["name"]: f["default"] for f in self.schema["features"]}
@@ -59,6 +67,7 @@ class Registry:
             raise RuntimeError("No models found - run scripts/train.py first.")
 
     def frame(self, features: dict) -> tuple[pd.DataFrame, list[str]]:
+        MODEL_FEATURES = self.MODEL_FEATURES
         unknown = set(features) - set(MODEL_FEATURES)
         if unknown:
             raise HTTPException(422, f"Unknown features: {sorted(unknown)}")
@@ -110,7 +119,16 @@ def registry() -> Registry:
     return Registry()
 
 
-app = FastAPI(title="CardioVision CAD API", version=__version__)
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # Fire-and-forget: loading models/building SHAP explainers can take a while on a
+    # slow/cold host. Doing it in a background thread lets uvicorn report the port as
+    # open immediately, instead of blocking startup on it.
+    threading.Thread(target=registry, daemon=True).start()
+    yield
+
+
+app = FastAPI(title="CardioVision CAD API", version=__version__, lifespan=lifespan)
 # Comma-separated list, e.g. "https://cardiovision.vercel.app". Defaults to any origin.
 CORS_ORIGINS = [o.strip() for o in os.environ.get("CORS_ORIGINS", "*").split(",") if o.strip()]
 app.add_middleware(CORSMiddleware, allow_origins=CORS_ORIGINS, allow_methods=["*"], allow_headers=["*"])
@@ -122,7 +140,11 @@ class PredictRequest(BaseModel):
 
 @app.get("/api/health")
 def health():
-    return {"status": "ok", "version": __version__, "models": {t: b["model_name"] for t, b in registry().models.items()}}
+    try:
+        r = registry()
+    except RuntimeError:
+        return {"status": "starting", "version": __version__}
+    return {"status": "ok", "version": __version__, "models": {t: b["model_name"] for t, b in r.models.items()}}
 
 
 @app.get("/api/schema")
