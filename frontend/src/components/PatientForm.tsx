@@ -65,7 +65,10 @@ function Field({ spec, value, onChange }: { spec: FeatureSpec; value: number | s
         />
         <input
           type="number" step={spec.step ?? 1} value={num}
-          onChange={(e) => e.target.value !== '' && onChange(spec.name, Number(e.target.value))}
+          onChange={(e) => {
+            const n = Number(e.target.value)
+            if (e.target.value !== '' && !Number.isNaN(n)) onChange(spec.name, n)
+          }}
         />
         <span className="unit">{spec.unit}</span>
       </div>

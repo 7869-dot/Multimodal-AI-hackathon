@@ -43,6 +43,7 @@ class Registry:
         background = load_dataset()
         self.schema = _read("schema.json")
         self.defaults = {f["name"]: f["default"] for f in self.schema["features"]}
+        self.feature_group = {f["name"]: f["group"] for f in self.schema["features"]}
         self.models: dict[str, dict] = {}
         for t in TARGETS:
             path = MODELS_DIR / f"{t}.joblib"
@@ -90,8 +91,7 @@ class Registry:
                     lo, hi = m["normal"]
                     status = "low" if val < lo else "high" if val > hi else "normal"
                 contribs.append({
-                    "feature": f, "label": m["label"], "group": next(
-                        x["group"] for x in self.schema["features"] if x["name"] == f),
+                    "feature": f, "label": m["label"], "group": self.feature_group[f],
                     "value": str(val) if f == "BBB" else float(val), "unit": m.get("unit"),
                     "status": status, "contribution": round(v, 5),
                 })
